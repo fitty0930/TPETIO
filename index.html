@@ -12,42 +12,61 @@
 </head>
 
 <body>
-    <section class="seccion-texto">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis suscipit repellendus dolores necessitatibus
-            minus totam perspiciatis nemo autem ex ipsum, neque inventore reiciendis possimus eaque aspernatur dolor
-            nesciunt fuga iste.</p>
-    </section>
+    <div class="container-fluid">
+        <div class="row">
 
-    <h4> Ingrese sugerencias </h4>
-    <div class="form-group">
-        <form id="nueva-Maqueta">
-
-
-            <input type="text" class="form-control" id="Auto" placeholder="Vehículo">
-            <label for="Año"> </label>
-            <input type="number" class="form-control" id="Año" placeholder="Año">
-            <label for="espacios"></label>
-        </form>
-
-        <button id="enviarSugerencia"> Enviar </button>
-    </div>
-    <input id="buscar" type="text" class="form-control" placeholder="Escriba algo para filtrar" />
-    <label for="espacio"> </label>
-    <input id="resaltar" type="text" class="form-control" placeholder="Escriba algo para resaltar" />
-    <div class="table-responsive container-fluid">
-        <div id="tabla-sugerencias">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th> Vehículo a maquetar </th>
-                        <th> Año del mismo </th>
-                    </tr>
-                </thead>
-                <tbody id="autos-tabla"></tbody>
-            </table>
+            <section class="seccion-texto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis suscipit repellendus dolores
+                    necessitatibus
+                    minus totam perspiciatis nemo autem ex ipsum, neque inventore reiciendis possimus eaque aspernatur
+                    dolor
+                    nesciunt fuga iste.</p>
+            </section>
         </div>
     </div>
-    <button class="btn-primary" id="borrar"> Borrar Todo </button>
+    <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+            <h4> Ingrese sugerencias </h4>
+            <div class="form-group">
+                <form id="nueva-Maqueta">
+
+
+                    <input type="text" class="form-control" id="Auto" placeholder="Vehículo">
+                    <label for="Año"> </label>
+                    <input type="number" class="form-control" id="Año" placeholder="Año">
+                    <label for="espacios"></label>
+                </form>
+
+                <button id="enviarSugerencia"> Enviar </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+            <input id="buscar" type="text" class="form-control" placeholder="Escriba algo para filtrar" />
+            <label for="espacio"> </label>
+            <input id="resaltar" type="text" class="form-control" placeholder="Escriba algo para resaltar" />
+            <div class="table-responsive container-fluid">
+                <div id="tabla-sugerencias">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th> Vehículo a maquetar </th>
+                                <th> Año del mismo </th>
+                            </tr>
+                        </thead>
+                        <tbody id="autos-tabla"></tbody>
+                    </table>
+                </div>
+            </div>
+            <button class="btn-primary" id="borrar"> Borrar Todo </button>
+        </div>
+    </div>
+    
+
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
